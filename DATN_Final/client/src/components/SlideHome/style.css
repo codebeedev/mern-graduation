@@ -1,0 +1,46 @@
+.ci-m66-feature-teaser-container {
+	padding-left: 40px;
+}
+
+.SlideHome_Right
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ci-m66-feature-title
+{
+	font-family: Pandora Display,Arial,sans-serif;
+	margin-top: 0;
+    margin-bottom: 0.5em;
+    color: rgba(0,0,0,.85);
+    font-weight: 700;
+	
+    font-size: 38px;
+}
+.ci-richtext.ci-richtext-text-alignment-left p
+{
+	font-family: Pandora Text,Arial,sans-serif;
+    font-weight: 400;
+	font-size: 16px;
+    color: #27251f;
+    text-align: left;
+    line-height: 1.5;
+}
+.ci-button-frontpage-large
+{
+	width: auto;
+    font-weight: 400;
+	text-align: center;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+	background-color: #27251f;
+	color: #fff;
+	
+    padding: 10px 28px;
+
+}

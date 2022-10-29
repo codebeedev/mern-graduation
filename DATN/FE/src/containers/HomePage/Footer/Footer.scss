@@ -1,0 +1,19 @@
+.footer {
+    height          : 40px;
+    background-color: #0d192e;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    color           : white;
+    font-weight     : 500;
+
+    &.hover {
+        background-color: aqua;
+    }
+
+    a {
+        text-decoration: none;
+        margin-left    : 5px;
+        color          : white;
+    }
+}

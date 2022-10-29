@@ -1,0 +1,7 @@
+.review {
+  margin-top: 20px;
+
+  .ant-rate-star:not(:last-child) {
+    margin-right: unset;
+  }
+}

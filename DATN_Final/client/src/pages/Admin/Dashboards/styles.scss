@@ -1,0 +1,24 @@
+.dashboard {
+  &-item {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    height: 150px;
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &-line {
+    width: 80%;
+    margin: auto;
+  }
+
+  &-doughnut {
+    width: 30vmax;
+    margin: auto;
+  }
+}

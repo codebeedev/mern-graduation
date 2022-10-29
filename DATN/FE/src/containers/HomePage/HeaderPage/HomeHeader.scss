@@ -1,0 +1,493 @@
+.home-header-info-container {
+    height    : 32px;
+    background: #e7eef8e3;
+    padding   : 0 12%;
+    z-index   : 1000;
+
+    .home-header-info-content {
+        height     : 100%;
+        display    : flex;
+        font-size  : 12px;
+        font-weight: 500;
+        color      : black;
+        align-items: center;
+
+        .home-header-info-left {
+            width          : 100%;
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+            gap            : 40px;
+
+            .address {
+
+                font-weight: 550;
+
+                i {
+                    margin-right: 5px;
+                    color       : #0064d2;
+                    font-size   : 16px;
+                }
+            }
+
+            .mobile {
+
+                display        : flex;
+                justify-content: left;
+                align-items    : center;
+                color          : #0064d2;
+                font-weight    : 550;
+
+
+                i {
+                    background-color: #0064d2;
+                    color           : white;
+                    margin-right    : 5px;
+                    font-size       : 8px;
+                    padding         : 5px;
+                    border-radius   : 50%;
+                }
+            }
+        }
+
+        .home-header-info-right {
+            width          : 30%;
+            display        : flex;
+            justify-content: right;
+            font-weight    : 550;
+            gap            : 20px;
+
+            .login {
+                cursor: pointer;
+
+                i {
+                    margin-right: 5px;
+                    color       : #0064d2;
+                }
+            }
+
+            .sign-up {
+                cursor: pointer;
+
+                i {
+                    margin-right: 5px;
+                    color       : #0064d2;
+                }
+            }
+
+            .language {
+                background-color: #c1d0ef;
+                display         : flex;
+                line-height     : 18px;
+                height          : 18px;
+                width           : 60px;
+                border-radius   : 10px;
+                font-size       : 12px;
+
+                .language-vn {
+                    cursor          : pointer;
+                    height          : 100%;
+                    width           : 50%;
+                    background-color: #0066d2c4;
+                    border-radius   : 10px;
+
+                    &.active {
+                        cursor          : pointer;
+                        background-color: #0066d2c4;
+                        height          : 100%;
+                        width           : 50%;
+                        border-radius   : 10px;
+                    }
+                }
+
+                .language-en {
+                    cursor: pointer;
+                    height: 100%;
+                    width : 50%;
+
+
+
+                    &.active {
+                        cursor          : pointer;
+                        height          : 100%;
+                        width           : 50%;
+                        background-color: #0066d2c4;
+                        border-radius   : 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.home-header-logo-container {
+    height          : 90px;
+    background-color: white;
+    padding         : 10px 12%;
+    z-index         : 1000;
+
+    .home-header-logo-content {
+        height : 100%;
+        display: flex;
+        gap    : 5px;
+
+        .home-header-logo-left {
+            width: 25%;
+
+            .logo {
+                height             : 100%;
+                background         : url("../../../assets/logo.png");
+                background-repeat  : no-repeat;
+                background-size    : contain;
+                background-position: center;
+                display            : flex;
+                flex-direction     : column;
+            }
+        }
+
+        .home-header-logo-center {
+            display    : flex;
+            align-items: center;
+            width      : 65%;
+            padding    : 0 40px;
+
+            .search {
+                width: 100%;
+
+                .search-input {
+                    border-radius   : 30px;
+                    background-color: white;
+                    width           : 100%;
+                    border          : 2px solid gray;
+                    height          : 35px;
+                    display         : flex;
+                    align-items     : center;
+
+                    i {
+                        width       : 10%;
+                        padding-left: 28px;
+                        cursor      : pointer;
+                    }
+
+                    input {
+                        width      : 87%;
+                        border     : none;
+                        outline    : none;
+                        border-left: 1px solid gray;
+                    }
+                }
+
+                .search-resullt {
+                    top             : 97px;
+                    position        : absolute;
+                    background-color: white;
+                    width           : 660px;
+                    z-index         : 2000;
+                    overflow        : hidden;
+                    overflow-y      : auto;
+                    border-radius   : 5px;
+                    border          : 1px solid rgba(128, 128, 128, 0.248);
+                    max-height      : 280px;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    .resullt {
+                        display: flex;
+                        gap    : 5px;
+                        padding: 5px 10px;
+                        cursor : pointer;
+
+
+                        &:hover {
+                            background-color: rgba(128, 128, 128, 0.241);
+                        }
+
+                        .image {
+                            height: 45px;
+                            width : 60px;
+
+                            p {
+                                img {
+                                    height: 45px;
+                                    width : 60px;
+                                }
+                            }
+                        }
+
+                        .nameTour {
+                            display    : flex;
+                            align-items: center;
+                        }
+
+                        .addresTour {
+                            display    : flex;
+                            align-items: center;
+
+                            i {
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .home-header-logo-right {
+
+            .link {
+                height         : 100%;
+                display        : flex;
+                justify-content: right;
+                align-items    : center;
+                gap            : 10px;
+
+                .item-link {
+                    height         : 25px;
+                    width          : 25px;
+                    display        : flex;
+                    justify-content: center;
+                    align-items    : center;
+                    border-radius  : 50%;
+
+                    &.facebook {
+                        background-color: #0064d2;
+                    }
+
+                    &.twitter {
+                        background-color: #3892f1;
+                    }
+
+                    &.youtube {
+                        background-color: #f13838;
+                    }
+
+                    &.instagram {
+                        background-color: #171515;
+                    }
+
+                    i {
+                        font-size: 13px;
+                        color    : white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-header-nav-container {
+    position: sticky;
+    top     : -1px;
+    z-index : 1000;
+
+    height    : 40px;
+    background: #0064d2;
+    padding   : 0 12%;
+
+    .home-header-nav-content {
+        height     : 100%;
+        display    : flex;
+        font-size  : 15px;
+        font-weight: 600;
+        color      : white;
+
+        .home-header-nav {
+            width          : 100%;
+            height         : 100%;
+            height         : 100%;
+            display        : flex;
+            align-items    : center;
+            justify-content: left;
+            list-style-type: none;
+
+            .home {
+                height         : 100%;
+                width          : 42px;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+
+                &:hover {
+                    background-color: #0a1d32;
+                }
+
+                a {
+                    color: white;
+
+                    i {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .title-tourA1 {
+                line-height: 40px;
+                height     : 40px;
+                padding    : 0 30px;
+                font-size  : 14px;
+                text-align : left;
+
+                .dichvu {
+                    left            : 660px;
+                    width           : 150px;
+                    display         : none;
+                    background-color: white;
+                    position        : absolute;
+                    list-style-type : none;
+                    box-shadow      : 0px 2000px 0px 2000px rgba(2, 2, 2, 0.333);
+
+                    .khachsan {
+                        float         : left;
+                        color         : black;
+                        font-weight   : 500;
+                        text-transform: uppercase;
+                    }
+                }
+
+
+
+                cursor: pointer;
+
+
+                &:hover {
+                    background-color: #0a1d32;
+
+
+                    .box-menu-container-tourA1 {
+                        display: block;
+                    }
+
+                    .dichvu {
+                        display: block;
+
+                    }
+                }
+
+
+                .box-menu-container-tourA1 {
+                    left            : 0;
+                    width           : 76%;
+                    margin-left     : 12%;
+                    padding         : 10px 50px 10px 20px;
+                    display         : none;
+                    background-color: white;
+                    position        : absolute;
+                    list-style-type : none;
+                    box-shadow      : 0px 2000px 0px 2000px rgba(2, 2, 2, 0.333);
+
+
+                    .box-menu-content {
+                        width          : 100%;
+                        display        : flex;
+                        text-align     : left;
+                        justify-content: space-between;
+
+
+
+                        .box-regions {
+                            padding-left: 5px;
+                            width       : 20%;
+                            margin-right: 20px;
+                            left        : 200px;
+
+
+
+                            ul {
+                                list-style-type: none;
+
+                                li {
+                                    padding-left : 5px;
+                                    font-weight  : 300;
+                                    text-align   : center;
+                                    height       : 28px;
+                                    line-height  : 28px;
+                                    background   : linear-gradient(180deg, rgb(0, 123, 255) 0%, rgba(18, 77, 228, 0.721) 100%);
+                                    border-radius: 10px;
+                                    color        : white;
+                                    margin       : 10px 0;
+
+                                    &:hover {
+                                        opacity    : 0.9;
+                                        background : #0a1d32;
+                                        font-weight: 300;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .box-tour {
+                            width          : 80%;
+                            display        : flex;
+                            justify-content: space-between;
+
+                            gap: 10px;
+
+                            .tour {
+                                width        : 25%;
+                                height       : 200px;
+                                box-shadow   : 0px 0px 1px 1px rgba(109, 109, 109, 0.286);
+                                padding      : 10px;
+                                border-radius: 10px;
+
+                                &:hover {
+                                    .nametour {
+                                        color: #0064d2;
+                                    }
+
+                                    .imgtour {
+                                        opacity: 0.9;
+                                    }
+                                }
+
+                                .imgtour {
+                                    height: 65%;
+
+                                    p {
+                                        img {
+                                            height: 117px;
+                                            width : 195px;
+                                        }
+                                    }
+                                }
+
+                                .nametour {
+                                    line-height   : 21px;
+                                    height        : 25%;
+                                    font-size     : 12px;
+                                    text-transform: uppercase;
+                                    color         : black;
+                                }
+
+                                .pricetour {
+                                    height        : 10%;
+                                    line-height   : 20px;
+                                    font-size     : 16px;
+                                    text-transform: uppercase;
+                                    color         : #0064d2;
+
+                                    label {
+                                        text-transform: none;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                &.active {
+                    background-color: #0a1d32;
+                }
+
+            }
+
+
+        }
+    }
+}

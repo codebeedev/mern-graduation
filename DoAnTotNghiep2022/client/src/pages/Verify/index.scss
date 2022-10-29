@@ -1,0 +1,95 @@
+.verify {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    position: relative;
+
+    &__provenance {
+        margin-top: 20px;
+        max-width: 350px;
+        position: relative;
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        border-radius: 5px;
+        max-height: 35vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    &__info {
+        width: 100%;
+        max-width: 350px;
+        position: relative;
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        border-radius: 5px;
+
+        &--item {
+            margin-top: 5px;
+
+            & > span {
+                &:first-child{
+                    color: rgba(255, 255, 255, 0.7);
+                }
+
+                &:last-child{
+                    font-weight: 600;
+                }
+            }
+
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    &__product {
+        width: 100%;
+        max-width: 350px;
+        position: relative;
+
+        &--imgFade{
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--imgContain{
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            & > img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                object-fit: contain;
+            }
+        }
+
+        &--img{
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+       &--contain{
+           padding-top: 100%;
+           position: relative;
+       }
+   }
+}

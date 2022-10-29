@@ -1,0 +1,24 @@
+.noDataFound {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20% 0px;
+
+    &__icon {
+        & > svg {
+            width: 40vh;
+            height: 40vh;
+            max-width: 120px;
+            max-height: 120px;
+        }
+    }
+
+    &__title {
+        margin-top: 20px;
+        font-size: 23px;
+        font-weight: 700;
+    }
+}

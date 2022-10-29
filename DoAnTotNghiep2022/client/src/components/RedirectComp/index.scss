@@ -1,0 +1,30 @@
+.redirectComp {
+    display: flex;
+    margin: 10px 0px;
+
+    & > div {
+        margin-right: 20px;
+        transition: .2s;
+
+        &.earth {
+            color: #28a745!important;
+        }
+
+        &.certi{
+            color: #ffc107!important;
+        }
+
+        &.arrow {
+            color: #007bff!important;
+        }
+
+        &:hover{
+            cursor: pointer;
+            transform: translateY(-1px);
+        }
+
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}

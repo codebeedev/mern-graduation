@@ -1,0 +1,242 @@
+.detailMarketNFT{
+    margin-top: 20px;
+
+    &__user {
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        border-radius: 10px;
+
+        &--title {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 10px;
+
+            &:first-child{
+                margin-top: 0px;
+            }
+        }
+
+        &--value {
+            font-size: 15px;
+            padding-left: 5px;
+            font-weight: 700;
+        }
+    }
+
+    &__bids {
+        &--item {
+            position: relative;
+            padding-bottom: 35px;
+
+            &:last-child{
+                padding-bottom: 10px;
+            }
+        }
+
+        &--line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-left: 2px dashed rgba(255, 255, 255, 0.5);
+            height: 100%;
+            margin-top: 10px;
+
+            & > div {
+                height: 8px;
+                width: 8px;
+                background-color: #ffc107;
+                transform: translateX(-5px) translateY(-3px);
+                border-radius: 50%;
+            }
+        }
+
+        &--container {
+            padding-left: 20px;
+        }
+
+        &--content {
+            color: rgba(255, 255, 255, 0.7);
+
+            & > .address {
+                font-weight: 600;
+                color: white;
+            }
+
+            & > .price {
+                color: #ffc107;
+                font-weight: 600;
+            }
+        }
+
+        &--time {
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255, 193, 7, 0.6);
+            margin-top: 10px;
+        }
+    }
+
+    &__value {
+        font-size: 17px;
+        font-weight: 700;
+        margin-top: 10px;
+
+        &.modalComp{
+            margin-top: 3px;
+            margin-bottom: 10px;
+            font-size: 15px;
+
+            & > img {
+                height: 25px !important;
+                width: 25px !important;
+            }
+        }
+
+        &.price {
+            display: flex;
+            align-items: center;
+            color: #ffc107;
+
+            & > img {
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                margin-right: 5px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+
+        &.modalComp{
+            color: rgba(0, 0, 0, 0.3);
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: center;
+
+        &--buyNow {
+            width: 100%;
+            background-color: #2a2a72;
+            background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 700;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+            border-radius: 4px;
+            transition: .2s;
+
+            &.placeABid {
+                background-color: #ef5734;
+                background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+                color: black;
+            }
+
+            &:hover {
+                transform: translateY(-2px);
+                cursor: pointer;
+            }
+        }
+
+        &--col {
+            display: flex;
+            justify-content: center;
+        }
+
+        &--owning {
+            color: #28a745;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+
+            & > svg {
+                height: 26px;
+                width: 26px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__name {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    &__leftCol {
+        position: relative;
+        padding: 20px;
+    }
+
+    &__rightCol {
+        position: relative;
+        padding: 20px;
+    }
+
+    &__image {
+        width: 100%;
+        padding-top: 100%;
+        position: relative;
+
+        &--container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            & > img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+        }
+    }
+    
+    &__mode {
+        display: flex;
+        border-bottom: 2px solid rgba(255, 255  , 255, 0.5);
+
+        &--item {
+            margin-right: 30px;
+            font-size: 14px;
+            line-height: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 700;
+            padding: 10px 0px;
+            transform: translateY(2px);
+
+            &.actived{
+                border-bottom: 2px solid #009ffd;
+                color: #009ffd;
+                font-weight: 800;
+            }
+
+            &.inactived{
+                transition: .2s;
+                border-bottom: 2px solid #009ffd00;
+                &:hover{
+                    cursor: pointer;
+                    color: #009ffd;
+                }
+            }
+
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+}

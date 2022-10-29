@@ -1,0 +1,30 @@
+.cartEmpty {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 358px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+
+  &-content {
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .btn-shopping {
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 14px 22px;
+      letter-spacing: 0.14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      color: #fff;
+      background-color: #000;
+      border: 1px solid #000;
+    }
+  }
+}

@@ -1,0 +1,313 @@
+.DetaiTour_container {
+    padding: 30px 0;
+
+    .DetaiTour_content {
+        margin   : 0 12%;
+        font-size: 15px;
+
+        .tour_name {
+            text-transform: uppercase;
+            font-size     : 25px;
+            font-weight   : 600;
+            color         : #0064d2;
+        }
+
+        .title_tour {
+            margin-top: 20px;
+            width     : 100%;
+            display   : flex;
+
+            .title_left {
+                padding-top : 30px;
+                width       : 75%;
+                margin-right: 20px;
+
+
+            }
+
+            .title_right {
+                height : 400px;
+                width  : 25%;
+                padding: 5px;
+
+                .booktour {
+                    border          : 1px solid rgba(128, 128, 128, 0.582);
+                    height          : 100%;
+                    background-color: white;
+                    border-radius   : 10px;
+                    box-shadow      : 2px 2px 5px 0px #a6a6a6;
+                    padding         : 10px;
+                    width           : 100%;
+
+                    .booktour_info {
+                        height     : 50%;
+                        line-height: 37px;
+
+                        .address {
+                            color          : #4e4e4e;
+                            display        : flex;
+                            gap            : 5px;
+                            justify-content: center;
+                            align-items    : center;
+                            font-weight    : 600;
+                            font-size      : 20px;
+                            text-transform : uppercase;
+
+                            i {
+                                font-size: 17px;
+                            }
+
+                        }
+
+                        .matour {
+                            display        : flex;
+                            justify-content: left;
+                            align-items    : center;
+                            gap            : 5px;
+                            font-size      : 15px;
+                        }
+
+                        .diemden {
+                            display        : flex;
+                            justify-content: left;
+                            align-items    : center;
+                            gap            : 5px;
+                            font-size      : 15px;
+                        }
+
+                        .startDate {
+                            box-sizing : border-box;
+                            display    : flex;
+                            align-items: center;
+                            gap        : 3px;
+
+                            input {
+                                height          : 30px;
+                                width           : 175px;
+                                background-color: white;
+                            }
+                        }
+
+                        .number {
+                            display    : flex;
+                            align-items: center;
+                            box-sizing : border-box;
+                            gap        : 10px;
+
+                            select {
+                                width : 175px;
+                                height: 30px;
+                            }
+                        }
+                    }
+
+                    .price {
+                        margin-top : 5px;
+                        height     : 20%;
+                        line-height: 30px;
+                        gap        : 5px;
+
+                        .price_tour {
+                            font-size     : 35px;
+                            text-transform: uppercase;
+                            font-weight   : 600;
+                            text-align    : center;
+                            color         : #0c47a6;
+
+                        }
+                    }
+
+                    .booking {
+                        display        : flex;
+                        align-items    : center;
+                        justify-content: center;
+                        text-transform : uppercase;
+                        font-size      : 20px;
+                        font-weight    : 600;
+                        width          : 100%;
+                        height         : 18%;
+                        margin         : 5px 0;
+                        background     : #0064d2;
+                        color          : white;
+                        border-radius  : 10px;
+                        cursor         : pointer;
+
+                        &:hover {
+                            background-color: #00a2ff;
+                        }
+                    }
+
+                    .suppor {
+                        display        : flex;
+                        justify-content: center;
+                        align-items    : center;
+                        margin-top     : 5px;
+                        height         : 10%;
+                    }
+                }
+
+
+            }
+        }
+
+        .fb {
+            padding-top: 10px;
+
+            .like-share {
+                margin: 10px 0 20px 0;
+            }
+        }
+
+        .detail_tour {
+            border-top : 1px solid gray;
+            padding-top: 30px;
+            margin-top : 20px;
+            width      : 100%;
+            display    : flex;
+
+            .img_tour {
+                width: 40%;
+
+                p {
+                    img {
+                        width: 464px;
+                    }
+                }
+            }
+
+            .info_tour {
+                display    : flex;
+                align-items: center;
+                margin-left: 20px;
+                width      : 60%;
+            }
+        }
+
+        .customer_tour {
+            border-top : 1px solid gray;
+            padding-top: 30px;
+            margin-top : 20px;
+            width      : 100%;
+        }
+    }
+
+    .cmt {
+        padding: 10px 12%;
+    }
+
+    .interested_Tour {
+        margin      : 30px 12%;
+        padding-left: 18px;
+        height      : 900px;
+
+        .interested_title {
+            font-size: 20PX;
+        }
+
+        .tour_info {
+            border       : 1px solid rgba(137, 137, 136, 0.36);
+            height       : 400px;
+            width        : 270px;
+            float        : left;
+            margin-right : 17px;
+            margin-bottom: 17px;
+            padding      : 5px;
+            cursor       : pointer;
+
+            .image {
+                height: 50%;
+
+                p {
+                    img {
+                        background-size: cover;
+                        height         : 194px;
+                        width          : 258px;
+                        background     : center center no-repeat;
+                    }
+                }
+            }
+
+            .address {
+                height          : 7%;
+                padding         : 5px;
+                background-color: #0064d2;
+                ;
+                color: white;
+
+                i {
+                    font-size   : 14px;
+                    margin-right: 5px;
+                }
+            }
+
+            .info {
+                height : 43%;
+                padding: 0 5px;
+
+                .name {
+                    padding-top   : 5px;
+                    height        : 50%;
+                    font-size     : 16px;
+                    color         : rgb(67, 67, 67);
+                    text-transform: uppercase;
+
+                    &:hover {
+                        b {
+                            color: #0064d2;
+                        }
+                    }
+
+                }
+
+                .location {
+                    line-height: 27px;
+                    height     : 15%;
+
+                    i {
+                        color       : rgb(94, 94, 94);
+                        margin-right: 6px;
+                    }
+                }
+
+                .time {
+                    line-height: 27px;
+                    height     : 15%;
+
+                    i {
+                        color       : rgb(94, 94, 94);
+                        margin-right: 5px;
+                    }
+                }
+
+                .price {
+                    display        : flex;
+                    justify-content: space-between;
+                    align-items    : center;
+                    height         : 20%;
+                    border-top     : 1px solid rgb(215, 205, 205);
+                    font-size      : 18px;
+                    font-weight    : 600;
+                    color          : rgb(34, 32, 32);
+
+                    .btn-tour {
+                        height          : 30px;
+                        width           : 100px;
+                        text-transform  : uppercase;
+                        font-size       : 13px;
+                        font-weight     : 600;
+                        background-color: #0064d2;
+                        color           : white;
+                        border-radius   : 5px;
+                        border          : none;
+                        outline         : none;
+
+                        &:hover {
+                            background-color: #034e9af0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import "~antd/dist/antd.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .menu-item {
+        @apply p-5 inline-block border-b-4 border-black hover:border-white;
+    }
+
+    .mega-sub-item {
+        @apply block p-2 hover:bg-white hover:text-black cursor-pointer;
+    }
+
+    .mega-sub-item-title {
+        @apply block font-semibold text-xl mb-5;
+    }
+
+    .menu-sub-item {
+        @apply block px-7 py-2 hover:bg-white hover:text-black;
+    }
+}
+
+@layer utilities {
+    .sub-dropdown:hover > .sub-dropdown-content {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    .sub-dropdown:hover > a {
+        background-color: #fff;
+        color: #000;
+    }
+}
+body {
+    background-color: #f1f3f6;
+    font-family: "Roboto", sans-serif;
+}
+
+/* hover navbar dropdown arrow */
+.arrow_down {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #fff;
+}
+/* hover navbar dropdown arrow */
+
+/* login signup sidebar bg image */
+.loginSidebar {
+    background-image: url("https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png");
+    background-position: center 85%;
+    background-repeat: no-repeat;
+}
+/* login signup sidebar bg image */

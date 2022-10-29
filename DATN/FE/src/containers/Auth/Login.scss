@@ -1,0 +1,77 @@
+.login-background {
+    height    : 100vh;
+    background: linear-gradient(140deg, rgb(156, 205, 255) 0%, rgb(18, 78, 228) 100%);
+
+    .login-container {
+        padding         : 30px 10px;
+        border          : 1px solid #bebabaa5;
+        width           : 400px;
+        border-radius   : 10px;
+        background-color: white;
+        position        : absolute;
+        margin          : auto;
+        top             : 0;
+        bottom          : 0;
+        right           : 0;
+        left            : 0;
+        height          : 470px;
+
+        .logo {
+            height             : 100px;
+            width              : 80%;
+            background         : url("../../assets/logo2.png");
+            background-repeat  : no-repeat;
+            background-size    : contain;
+            background-position: center;
+            display            : flex;
+            flex-direction     : column;
+            margin             : auto;
+        }
+
+        .login-content {
+            padding: 10px;
+
+            .text-login {
+                text-align    : center;
+                font-weight   : 600;
+                font-size     : 24px;
+                padding-top   : 10 px;
+                text-transform: uppercase;
+                color         : #080b6a;
+            }
+
+            .login-input {
+                margin: 10px 0;
+
+                label {
+                    font-weight  : 600;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .btn-login {
+                background    : linear-gradient(180deg, rgb(52, 129, 206) 0%, rgb(18, 78, 228) 100%);
+                width         : 100%;
+                border-radius : 20px;
+                height        : 40px;
+                margin        : 10px 0;
+                outline       : none;
+                border        : none;
+                text-transform: uppercase;
+                font-weight   : 600;
+                color         : white;
+                font-size     : 20px;
+            }
+
+            .forgot-password {
+                font-size    : 12px;
+                text-align   : right;
+                padding-right: 2px;
+            }
+
+            .registration {
+                margin-top: 25px;
+            }
+        }
+    }
+}

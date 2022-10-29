@@ -1,0 +1,8 @@
+#menu {
+  margin: 15px auto;
+
+  .box_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

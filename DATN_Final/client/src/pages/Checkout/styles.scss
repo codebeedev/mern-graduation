@@ -1,0 +1,137 @@
+.checkout {
+  margin-top: 140px;
+  &-tit {
+    font-size: 28px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  &-info {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+
+    &-choose-payment {
+      box-shadow: 0 0 0 1px #d9d9d9;
+
+      img {
+        width: 40px;
+      }
+
+      .ant-radio-wrapper {
+        width: 100%;
+        padding: 20px 15px;
+        box-shadow: 0 0 0 1px #d9d9d9;
+      }
+    }
+    &-footer {
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &-products {
+    background-color: #fafafa;
+    height: 100%;
+
+    &-wrap {
+      padding: 20px 30px;
+    }
+
+    &-list {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    &-item {
+      margin-top: 15px;
+      display: grid;
+      grid-template-columns: 15% 65% 20%;
+      justify-content: center;
+
+      &:first-child {
+        margin-top: unset;
+      }
+
+      &-name {
+        font-weight: 500;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      &-img {
+        padding: 5px;
+        img {
+          border: 1px solid #eee;
+        }
+      }
+
+      & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &-price {
+        flex-direction: column;
+
+        .price-before {
+          text-decoration-line: line-through;
+        }
+      }
+    }
+  }
+  &-summary {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+
+    &-item {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-tit {
+        color: #717171;
+      }
+
+      &-cnt {
+        color: #4b4b4b;
+      }
+    }
+  }
+
+  &-total {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+
+    &-item {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-tit {
+        // color: #717171;
+        font-weight: 500;
+      }
+
+      &-cnt {
+        // color: #4b4b4b;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.paymentInput {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  outline: none;
+}

@@ -1,0 +1,118 @@
+.publishModal{
+    color: black !important;
+
+    &__body {
+        color: black !important;
+        &--img {
+            width: 100%;
+            height: 200px;
+
+            & > img {
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__step {
+        position: relative;
+
+        &--timeLine {
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            background-color: #a3acbb;
+            background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+            top: 0;
+            left: 0;
+            margin-left: 5px;
+            border-radius: 20px;
+            transition: ease-out;
+        }
+    }
+
+    &__stepItem {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        z-index: 1;
+        transition: .2s;
+
+        &.final {
+            align-items: flex-end;
+        }
+
+        &:last-child{
+            padding-bottom: 0px;
+        }
+
+        &--status {
+            position: relative;
+            margin-right: 25px;
+            height: 30px;
+            width: 30px;
+
+            &.final {
+                height: 45px;
+                width: 45px;
+                margin-left: -7px;
+
+                & > .success{
+                    height: 45px;
+                    width: 45px;
+                    background-color: #28a745;
+                }
+
+                & > .error{
+                    height: 45px;
+                    width: 45px;
+                    background-color: #dc3545;
+                }
+            }
+
+            & > div {
+                background-color: white;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.7);
+                padding: 4px;
+    
+                & > div {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                & > svg {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        &--content {
+            font-size: 14px;
+            font-weight: 700;
+
+            & > .title {
+                &.minted {
+                    font-size: 18px;
+                    color: #045de9;
+                }
+            }
+            
+            & > .content{
+                font-weight: 500;
+
+                &.is_yours {
+                    color: #28a745!important;
+                }
+
+                &.not_is_yours {
+                    color: #dc3545!important;                    
+                }
+            }
+        }
+    }
+}

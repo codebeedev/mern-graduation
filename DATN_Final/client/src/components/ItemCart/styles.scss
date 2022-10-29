@@ -1,0 +1,23 @@
+.itemCart {
+  display: grid;
+  grid-template-columns: 10% 50% 15% 15% 10%;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+
+  .price-before {
+    text-decoration-line: line-through;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .itemCart-tit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,122 @@
+.detailNFT{
+    margin-top: 20px;
+
+    &__provenance {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+
+        &--title {
+            font-weight: 700;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+
+            & > .title {
+                flex-grow: 1;
+            }
+        }
+
+        &--chev{
+            background-color: none;
+            transition: .2s;
+
+            &.open{
+                transform: rotate(180deg);
+
+                &:hover{
+                    transform: rotate(180deg) translateY(2px);
+                }
+            }
+
+            &:hover{
+                cursor: pointer;
+                transform: translateY(-2px);
+            }
+
+            & > svg {
+                height: 35px;
+                width: 35px;
+            }
+        }
+    }
+
+    &__comp2{
+        margin-top: 20px;
+    }
+
+    &__comp1 {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+
+        &--image {
+            height: 300px;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        &--name {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        &--isMarket {
+            font-size: 13px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            color: #ffc107;
+
+            &.is_market {
+                color: #28a745;
+            }
+
+            & > svg {
+                height: 18px;
+                width: 18px;
+                margin-left: 2px;
+            }
+        }
+
+        &--btns {
+            margin-top: 10px;
+
+            & > div {
+                width: fit-content;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                background-color: #2a2a72;
+                background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+                font-size: 14px;
+                line-height: 14px;
+                padding: 5px 10px;
+                border-radius: 4px;
+                transition: .2s;
+
+                &:hover{
+                    transform: translateY(-1px);
+                    cursor: pointer;
+                }
+
+                & > svg {
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 3px;
+                }
+            }
+        }
+
+        &--listNFT {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px rgba(128, 128, 128, 0.3) solid;
+        }
+    }
+}
+
+.daterangepicker {
+    color: black !important;
+}

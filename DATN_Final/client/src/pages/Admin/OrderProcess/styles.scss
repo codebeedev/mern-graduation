@@ -1,0 +1,20 @@
+.orderProcess {
+  &-tit {
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  &-order {
+    width: 80%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,41 @@
+.policy {
+  margin-top: 100px;
+}
+.policy-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  padding-left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: translateY(-20px);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    color: #000;
+
+    .icon-card {
+      font-size: 30px;
+    }
+  }
+
+  &__info {
+    &__name {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 14px;
+      color: #8d8d8d;
+    }
+  }
+}

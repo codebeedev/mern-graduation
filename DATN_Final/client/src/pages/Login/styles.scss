@@ -1,0 +1,65 @@
+.login {
+  padding-top: 300px;
+  overflow: hidden;
+
+  #login {
+    width: 500px;
+  }
+
+  .login-tit {
+    position: relative;
+    &::after {
+      content: '';
+      background: #000;
+      display: block;
+      width: 60px;
+      height: 4px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: 700;
+      margin: 0px 0;
+      line-height: initial;
+    }
+  }
+
+  .ant-input-affix-wrapper-focused,
+  .ant-input-affix-wrapper:focus {
+    border-color: #000;
+    border-right-width: 1px;
+    outline: 0;
+  }
+
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: #000;
+    border-right-width: 1px;
+    z-index: 1;
+  }
+
+  .ant-btn:focus,
+  .ant-btn:hover {
+    color: #000;
+    border-color: #000;
+  }
+
+  .ant-btn {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .req_pass {
+    gap: 10px;
+    padding-top: 10px;
+    a {
+      color: #000;
+      font-weight: 500;
+    }
+  }
+}

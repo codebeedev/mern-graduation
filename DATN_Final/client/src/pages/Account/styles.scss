@@ -1,0 +1,97 @@
+.account {
+  margin-top: 140px;
+
+  &-title {
+    padding: 30px 15px;
+    margin-bottom: 60px;
+    h1 {
+      font-size: 45px;
+      font-weight: 700;
+      margin: 0;
+      text-align: center;
+      color: #000;
+      &:after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        margin: 50px auto 0;
+        background: #252a2b;
+      }
+    }
+  }
+
+  &-sidebar {
+    &-title {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      position: relative;
+    }
+
+    &-content {
+      .list-content {
+        a {
+          display: block;
+          position: relative;
+          padding: 5px 0px;
+          color: #27251f;
+
+          &:before {
+            content: '\f192';
+            font-family: 'FontAwesome';
+            font-size: 8px;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  &-profile {
+    background-color: #fafafa;
+    &-title {
+      font-size: 14px;
+      background-color: #d9edf7;
+      padding: 10px;
+
+      &-name {
+        font-weight: 700;
+        font-size: 14px;
+
+        .email {
+          font-size: 10px;
+          font-weight: 500;
+        }
+      }
+
+      &-action {
+        cursor: pointer;
+      }
+    }
+
+    &-content {
+      padding: 10px;
+
+      &-name {
+        font-weight: 500;
+      }
+
+      &-address {
+        margin-top: 10px;
+      }
+
+      &-phone {
+        margin-top: 10px;
+      }
+    }
+
+    &-edit {
+      padding: 20px 30px;
+    }
+  }
+}
